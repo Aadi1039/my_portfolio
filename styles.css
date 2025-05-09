@@ -1,0 +1,58 @@
+/* General Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+    text-align: center;
+}
+
+/* Animated Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate-text {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+/* Projects Styling */
+.project-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
